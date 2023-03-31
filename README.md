@@ -12,7 +12,7 @@ go get github.com/beevik/ntp
 ```
 
 
-## Compilar estatico (para copiar el binario a otro eqipo=
+## Compilar estatico (para copiar el binario a otro equipo)
 ```bash
 CGO_ENABLED=0 go build -ldflags '-extldflags "-static"' ntp.go
 ```
