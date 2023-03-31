@@ -41,9 +41,10 @@ Poll: 1s
 
 ## Docker
 
+```bash
 docker build --tag ntp-go .
 
 docker run -it --rm --name ntp-go ntp-go /app/ntp time.google.com
-
+```
 
 
