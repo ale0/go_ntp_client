@@ -3,16 +3,19 @@ Cliente usando github.com/beevik/ntp para mostrar info del servidor NTP
 
 ## Instrucciones
 
-
+```bash
 mkdir go_ntp
 cd go_ntp
 
 go mod init ntp
 go get github.com/beevik/ntp
+```
 
 
 ## Compilar estatico (para copiar el binario a otro eqipo=
+```bash
 CGO_ENABLED=0 go build -ldflags '-extldflags "-static"' ntp.go
+```
 
 
 ```bash
